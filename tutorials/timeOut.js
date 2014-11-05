@@ -1,13 +1,11 @@
-setInterval(function () {
-		console.log("Hello")
-}, 3000);
-
-setTimeout(function()
+var hello = setInterval(function () 
 {
-	console.log("end interval")
-}, 2000);
-
-setTimeout(function()
-{
-	console.log("..... interval")
+	console.log("Hello")
+	
 }, 1000);
+
+setTimeout(function()
+{
+	clearInterval(hello);
+	console.log("..... interval")
+}, 6000);
